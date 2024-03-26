@@ -6,6 +6,8 @@ public class Number_Game {
     static boolean correct = false;
     static Scanner scanner = new Scanner(System.in);
     static int tries;
+    static int rounds = 0;
+    static int wins;
 
     public static void tries_check() {
         if (tries == 1) {
@@ -32,21 +34,24 @@ public class Number_Game {
     }
 
     public static void main(String[] args) {
-        String round = "y";
-
-        while (round == "y") {
+        System.out.println("Do you want to play a round?[y/n]:");
+        String choice = scanner.nextLine();
+        while (choice.equals("y")) {
+            rounds +=1;
+            System.out.println("Round number: " + rounds);
             tries = 3;
+            correct = false;
             int secret_num = random.nextInt(100);
-            System.out.println(secret_num);
             while (!correct) {
                 check_guess(secret_num);
                 tries_check();
                 if (tries == 0) {
+                    System.out.println("The correct number was: " + secret_num );
                     break;
                 }
             }
             System.out.println("Do you want to play another round?[y/n]");
-            round = scanner.nextLine();
+            choice = scanner.nextLine();
         }
         System.out.println("Thank you for Playing!");
         scanner.close();
