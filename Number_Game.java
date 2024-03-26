@@ -8,14 +8,19 @@ public class Number_Game {
     static int tries;
     static int rounds = 0;
     static int wins;
+    static int score;
 
     public static void tries_check() {
-        if (tries == 1) {
-            System.out.println("You have " + tries + " more try!");
-        } else {
-            System.out.println("You have " + tries + " more tries!");
+        if (!correct) {
+            if (tries == 1) {
+                System.out.println("You have " + tries + " more try!");
+            } else {
+                System.out.println("You have " + tries + " more tries!");
+            }
         }
     }
+
+    
 
     public static void check_guess(int secret_num) {
         System.out.println("Enter your Guess");
@@ -29,6 +34,7 @@ public class Number_Game {
             tries -= 1;
         } else {
             System.out.println("Your Guess was correct");
+            score += 1;
             correct = true;
         }
     }
@@ -37,16 +43,17 @@ public class Number_Game {
         System.out.println("Do you want to play a round?[y/n]:");
         String choice = scanner.nextLine();
         while (choice.equals("y")) {
-            rounds +=1;
+            rounds += 1;
             System.out.println("Round number: " + rounds);
-            tries = 3;
+            System.out.println("Current Score: " + score);
+            tries = 10;
             correct = false;
             int secret_num = random.nextInt(100);
             while (!correct) {
                 check_guess(secret_num);
                 tries_check();
                 if (tries == 0) {
-                    System.out.println("The correct number was: " + secret_num );
+                    System.out.println("The correct number was: " + secret_num);
                     break;
                 }
             }
