@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Student_Grade_Calculator",
+      "request": "launch",
+      "mainClass": "Student_Grade_Calculator",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "name": "Python",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "",
+      "console": "integratedTerminal"
+    }
+  ]
+}
