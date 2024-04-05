@@ -25,17 +25,19 @@ public class Student_Grade_Calculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (true) {
-            System.out.println("Enter mark (out of 100%):");
+        System.out.println("How many subjects do you have: ");
+        int count = scanner.nextInt();
+        scanner.nextLine();        
+        int i = 1;
+        System.out.println("Enter marks (out of 100%):");
+        while (i <= count) {
+            System.out.print("" + i + ".");
             int mark = scanner.nextInt();
             scanner.nextLine();
             marks.add(mark);
             total_marks += mark;
-            System.out.println("Do you want to add another mark? yes/no");
-            String choice = scanner.nextLine();
-            if (choice.equalsIgnoreCase("no")) {
-                break;
-            }
+            i++;
+
         }
         float ave = total_marks / marks.size();
         System.out.println("Total Marks: " + total_marks + "\nAverage: " + ave + "\nGrade: " + grader(ave));
