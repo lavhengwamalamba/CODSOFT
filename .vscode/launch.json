@@ -2,6 +2,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CurrencyConverter",
+      "request": "launch",
+      "mainClass": "src.CurrencyConverter",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
+      "name": "CurrencyConverter",
+      "request": "launch",
+      "mainClass": "CurrencyConverter",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
+      "name": "NumberGame",
+      "request": "launch",
+      "mainClass": "NumberGame",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
+      "name": "Number_Game",
+      "request": "launch",
+      "mainClass": "Number_Game",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
       "name": "Student_Grade_Calculator",
       "request": "launch",
       "mainClass": "Student_Grade_Calculator",
