@@ -2,8 +2,7 @@ package src;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-public class Student_Grade_Calculator {
+public class Codsoft_taskno2 {
     static ArrayList<Integer> marks = new ArrayList<Integer>();
     static int total_marks = 0;
     static int average = 0;

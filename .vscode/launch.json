@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Codsoft_taskno4",
+      "request": "launch",
+      "mainClass": "src.Codsoft_taskno4",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
       "name": "NumberGame",
       "request": "launch",
       "mainClass": "src.NumberGame",

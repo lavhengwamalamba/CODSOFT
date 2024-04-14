@@ -3,7 +3,7 @@ package src;
 import java.util.Random;
 import java.util.Scanner;
 
-public class NumberGame {
+public class Codsoft_taskno1 {
     static boolean correct = false;
     static Random random = new Random();
     static Scanner scanner = new Scanner(System.in);

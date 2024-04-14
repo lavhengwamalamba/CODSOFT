@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CurrencyConverter {
+public class Codsoft_taskno4{
     static         ArrayList<Currency> currencies = new ArrayList<>(java.util.Arrays.asList(
         new Currency("EUR", "Euro", "€"),
         new Currency("USD", "US Dollar", "$"),
