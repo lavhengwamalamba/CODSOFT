@@ -52,7 +52,14 @@ public class Codsoft_taskno4{
 
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
-        System.out.println("Welcome to the Best Currency converter:");
+        System.out.println("Welcome to the Best Currency Converter!\n\n"
+        + "This currency converter allows you to easily convert between different currencies.\n\n"
+        + "Here's how it works:\n\n"
+        + "1. You will first select your base currency and target currency from the list provided.\n"
+        + "2. Then, you'll enter the amount you want to convert.\n"
+        + "3. The program will fetch the latest exchange rate and convert the amount for you.\n\n"
+        + "Let's get started!");
+
         System.out.println("Select your base and Target Currency:");
 
         for (int i = 0; i < currencies.size(); i++) {
