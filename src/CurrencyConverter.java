@@ -1,10 +1,6 @@
 package src;
 
 import java.io.*;
-// import okhttp3.OkHttpClient;
-// import okhttp3.Request;
-// import okhttp3.Response;
-// import json;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -56,7 +52,6 @@ public class CurrencyConverter {
 
     public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
-        // String[] currencies = { "USD", "CAD", "INR", "EUR" };
         System.out.println("Welcome to the Best Currency converter:");
         System.out.println("Select your base and Target Currency:");
 
@@ -105,10 +100,8 @@ public class CurrencyConverter {
             }
             in.close();
             String responseString = response.toString();
-            // System.out.println(responseString);
             Double exchangeRate = Double.parseDouble(
                     responseString.substring(responseString.lastIndexOf(":") + 2, responseString.indexOf("}")));
-            // System.out.println("Exchange Rate: " + exchangeRate);
             System.out
                     .println("" + amount +  base + " in " + target + " is: "+ currencies.get(targetnum).getSymbolNative()+ df.format((amount / exchangeRate)));
         } else {
