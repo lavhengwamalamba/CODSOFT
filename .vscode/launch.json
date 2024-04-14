@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Codsoft_taskno2",
+      "request": "launch",
+      "mainClass": "src.Codsoft_taskno2",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
+      "name": "Codsoft_taskno1",
+      "request": "launch",
+      "mainClass": "src.Codsoft_taskno1",
+      "projectName": "CODSOFT_f8aed2a5"
+    },
+    {
+      "type": "java",
       "name": "Codsoft_taskno4",
       "request": "launch",
       "mainClass": "src.Codsoft_taskno4",
