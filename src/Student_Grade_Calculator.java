@@ -1,4 +1,5 @@
 package src;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,11 +26,11 @@ public class Student_Grade_Calculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("How many subjects do you have: ");
+        System.out.println("How many Courses do you have: ");
         int count = scanner.nextInt();
         scanner.nextLine();
         int i = 1;
-        System.out.println("Enter marks (out of 100%):");
+        System.out.println("Enter marks for each Course out of 100%:");
         while (i <= count) {
             System.out.print("" + i + ". ");
             int mark = scanner.nextInt();
