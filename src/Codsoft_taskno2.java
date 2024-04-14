@@ -2,6 +2,7 @@ package src;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class Codsoft_taskno2 {
     static ArrayList<Integer> marks = new ArrayList<Integer>();
     static int total_marks = 0;
@@ -25,12 +26,12 @@ public class Codsoft_taskno2 {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the Grade Calculator!\n\n"
-        + "This program calculates your average marks and assigns a grade based on your performance.\n\n"
-        + "Here's how it works:\n\n"
-        + "1. You will be asked to enter the number of courses you have.\n"
-        + "2. Then, you will enter the marks for each course out of 100%.\n"
-        + "3. The program will calculate your total marks, average, and assign a grade.\n\n"
-        + "Let's get started!");
+                + "This program calculates your average marks and assigns a grade based on your performance.\n\n"
+                + "Here's how it works:\n\n"
+                + "1. You will be asked to enter the number of courses you have.\n"
+                + "2. Then, you will enter the marks for each course out of 100%.\n"
+                + "3. The program will calculate your total marks, average, and assign a grade.\n\n"
+                + "Let's get started!");
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many Courses do you have: ");
